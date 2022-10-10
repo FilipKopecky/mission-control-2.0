@@ -8,24 +8,24 @@ export const getVocabulariesUrl = () => "/vocabularies";
 /**
  * Endpoint to fetch workspaces and create a workspace
  */
-export const getWorkspacesUrl = () => "/workspaces";
+export const getProjectsUrl = () => "/workspaces";
 
 /**
  * Endpoint to fetch one workspace
  */
-export const getWorkspaceUrl = (id: Id) => `${getWorkspacesUrl()}/${id}`;
+export const getProjectUrl = (id: Id) => `${getProjectsUrl()}/${id}`;
 
 /**
  * Endpoint to publish a workspace
  */
 export const getWorkspacePublishUrl = (id: Id) =>
-  `${getWorkspaceUrl(id)}/publish`;
+  `${getProjectUrl(id)}/publish`;
 
 /**
  * Endpoint to fetch a list of vocabularies for a particular workspace
  */
 export const getWorkspaceVocabulariesUrl = (workspaceId: Id) =>
-  `${getWorkspaceUrl(workspaceId)}/vocabularies`;
+  `${getProjectUrl(workspaceId)}/vocabularies`;
 
 /**
  * Endpoint to create a vocabulary in a workspace
@@ -58,4 +58,4 @@ export const getWorkspaceVocabularyDependenciesUrl = (
   workspaceId: Id,
   vocabularyIri: Iri
 ) =>
-  `${getWorkspaceUrl(workspaceId)}/dependencies?vocabularyIri=${vocabularyIri}`;
+  `${getProjectUrl(workspaceId)}/dependencies?vocabularyIri=${vocabularyIri}`;

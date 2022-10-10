@@ -12,7 +12,7 @@ export type BaseVocabulary = {
 };
 
 export type BaseVocabularyWithWorkspace = BaseVocabulary & {
-  workspace?: Workspace;
+  workspace?: Project;
 };
 
 export type VocabularyData = BaseVocabularyData & {
@@ -48,7 +48,7 @@ export type DeleteVocabularyPayload = {
 };
 
 export type UpdateVocabularyPayload = {
-  workspace: Workspace;
+  workspace: Project;
   vocabulary: Vocabulary;
 };
 
@@ -66,7 +66,7 @@ export type PublishWorkspacePayload = EditWorkspacePayload;
 
 export type PRUri = string;
 
-export type WorkspaceData = {
+export type ProjectData = {
   uri: Iri;
   label: string;
   author: UserData;
@@ -76,8 +76,8 @@ export type WorkspaceData = {
   vocabularyContexts: VocabularyData[];
 };
 
-export type Workspace = Omit<
-  WorkspaceData,
+export type Project = Omit<
+  ProjectData,
   "author" | "lastEditor" | "created" | "lastModified" | "vocabularyContexts"
 > & {
   id: Id;
