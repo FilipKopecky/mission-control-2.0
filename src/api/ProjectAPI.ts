@@ -8,9 +8,6 @@ const getProjects = (): Promise<Project[]> => Ajax.get(getProjectsUrl()).then(re
 
 const getProject = (id: Id): Promise<Project> => {return Ajax.get(getProjectUrl(id)).then(resp => resp.data);}
 
-// const getProject = async (id: Id): Promise<Project> => {
-//     return Ajax.get(getProjectUrl(id)).then(resp => resp.data);
-// };
 
 export const useProjects = () => {
     return useQuery(["projects"], getProjects);
