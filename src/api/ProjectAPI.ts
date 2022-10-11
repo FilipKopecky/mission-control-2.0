@@ -20,3 +20,9 @@ export const useProject = (project: Project) => {
     getProject(getIdFromIri(project.uri))
   );
 };
+
+export const useProjectViaID= (uri: string) => {
+  return useQuery(["projectsID", uri], () =>
+      getProject(getIdFromIri(uri))
+  );
+};
