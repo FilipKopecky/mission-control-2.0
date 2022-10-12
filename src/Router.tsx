@@ -13,7 +13,6 @@ const Router: React.FC = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="home" element={<Home />} />
           <Route path="vocabularies" element={<Vocabularies />} />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/*" element={<Project />} />
