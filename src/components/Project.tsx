@@ -1,5 +1,5 @@
 import React from "react";
-import {useProject, useProjectViaID} from "../api/ProjectAPI";
+import {useProjectViaID} from "../api/ProjectAPI";
 import { Project as IProject } from "../@types";
 import {useLocation, useParams} from "react-router-dom";
 
@@ -17,17 +17,16 @@ const Project: React.FC = () => {
 };
 
 const ProjectDetail: React.FC<ProjectDetailInterface> = ({project}) => {
-    console.log(project);
-    return <h2>Project - detail - PASSED FROM PREVIOUS</h2>;
+    return <h2>{project.label}</h2>;
 }
 
 const ProjectDetailFetch: React.FC = () => {
     let params = useParams();
     const id = params['*'] ?? "";
-    const { data = [], isLoading } = useProjectViaID(id);
+    const { data, isLoading, isSuccess } = useProjectViaID(id);
     if (isLoading) return <h2>Loading...</h2>;
-    console.log(data);
-    return <h2>Project - detail</h2>;
+    if (!isSuccess) return <h2>It went wrong</h2>
+    return <ProjectDetail project={data} />;
 }
 
 
