@@ -1,0 +1,20 @@
+{
+  "controlPanel": "Kontrolní panel",
+  "cs": "Česky",
+  "en": "English",
+  "pageNotFound": "Stránka nenalezena",
+  "somethingWentWrong": "Něco se pokazilo",
+  "somethingWentWrongWithApi": "Něco se pokazilo při komunikaci se serverem",
+  "notAuthorized": "Nedostatečné oprávnění",
+  "username": "Uživatelské jméno",
+  "password": "Heslo",
+  "logout": "Odhlásit se",
+  "actions": "Akce",
+  "cancel": "Zrušit",
+  "errorRequired": "Prosím, vyplňte",
+  "publicityFirstLine": "Tato aplikace je udržována v rámci projektu",
+  "publicitySecondLine": "OPZ č. CZ.03.4.74/0.0/0.0/15_025/0013983.",
+  "reportBug": "Nahlásit chybu",
+  "requestFeature": "Navrhnout úpravu",
+  "noRecordsFound": "Nic nenalezeno"
+}

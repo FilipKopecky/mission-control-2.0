@@ -1,0 +1,20 @@
+{
+  "controlPanel": "Control Panel",
+  "cs": "Česky",
+  "en": "English",
+  "pageNotFound": "Page not found",
+  "somethingWentWrong": "Something went wrong",
+  "somethingWentWrongWithApi": "Something went wrong with API",
+  "notAuthorized": "Not authorized",
+  "username": "Username",
+  "password": "Password",
+  "logout": "Logout",
+  "actions": "Actions",
+  "cancel": "Cancel",
+  "errorRequired": "Required",
+  "publicityFirstLine": "This application is maintained within project",
+  "publicitySecondLine": "OPZ no. CZ.03.4.74/0.0/0.0/15_025/0013983.",
+  "reportBug": "Report a bug",
+  "requestFeature": "Request a feature",
+  "noRecordsFound": "No records found"
+}

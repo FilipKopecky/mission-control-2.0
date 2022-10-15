@@ -1,7 +1,7 @@
-//import i18n from "i18n";
+import i18n from "../i18n";
 //import Routes from "app/routes";
 
-//export type Locale = keyof typeof i18n;
+export type Locale = keyof typeof i18n;
 
 export type Iri = string;
 
